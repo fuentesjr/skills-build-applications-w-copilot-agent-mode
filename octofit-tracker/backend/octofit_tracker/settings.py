@@ -25,7 +25,11 @@ SECRET_KEY = "django-insecure-#c9y@*-*^8)d=ue77t#-j6^9x%^m^+7=bpvocj_8oya&0y!(=s
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = [
+    'localhost',
+    '127.0.0.1',
+    'stunning-meme-8000.app.github.dev',
+]
 
 
 # Application definition
@@ -37,8 +41,10 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    "corsheaders",
-    "octofit_tracker",
+    'rest_framework',
+    'djongo',
+    'corsheaders',
+    'octofit_tracker',
 ]
 
 MIDDLEWARE = [
