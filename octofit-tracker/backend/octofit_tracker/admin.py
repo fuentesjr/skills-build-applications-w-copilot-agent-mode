@@ -10,7 +10,6 @@ class UserAdmin(admin.ModelAdmin):
 class TeamAdmin(admin.ModelAdmin):
     list_display = ('name',)
     search_fields = ('name',)
-    filter_horizontal = ('members',)
 
 @admin.register(Activity)
 class ActivityAdmin(admin.ModelAdmin):
