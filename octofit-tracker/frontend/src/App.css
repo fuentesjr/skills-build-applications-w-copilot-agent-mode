@@ -1,0 +1,192 @@
+/* General styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(135deg, #f0f8ff 0%, #e0e7ff 100%);
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+/* Navigation styles */
+nav.navbar {
+  background: linear-gradient(90deg, #4682b4 0%, #6a5acd 100%);
+  padding: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08);
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  font-size: 1.7rem;
+  color: #fff !important;
+  font-weight: bold;
+}
+
+.octofit-logo {
+  height: 40px;
+  margin-right: 12px;
+}
+
+.navbar-nav .nav-link {
+  color: #e0e7ff !important;
+  font-weight: 500;
+  font-size: 1.1rem;
+  margin-right: 1rem;
+  transition: color 0.2s;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ffd700 !important;
+  text-decoration: underline;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  color: #2b2834;
+  font-weight: 700;
+}
+
+.card-header {
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+}
+
+/* Table styles */
+table {
+  width: 100%;
+  margin: 1rem auto;
+  border-collapse: collapse;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(70, 130, 180, 0.08);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+table th, table td {
+  border: 1px solid #dbeafe;
+  padding: 0.85rem;
+  text-align: left;
+  font-size: 1rem;
+}
+
+table th {
+  background: linear-gradient(90deg, #4682b4 0%, #6a5acd 100%);
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+table tr:nth-child(even) {
+  background-color: #f0f8ff;
+}
+
+table tr:hover {
+  background-color: #e0ffff;
+}
+
+/* Button styles */
+.btn, button {
+  background: linear-gradient(90deg, #6a5acd 0%, #4682b4 100%);
+  color: #fff !important;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+  box-shadow: 0 2px 4px rgba(70, 130, 180, 0.08);
+}
+
+.btn:hover, button:hover {
+  background: linear-gradient(90deg, #4682b4 0%, #6a5acd 100%);
+  color: #ffd700 !important;
+}
+
+/* Card styles */
+.card {
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(70, 130, 180, 0.10);
+  background: #fff;
+}
+
+.card-header {
+  border-radius: 12px 12px 0 0;
+}
+
+/* Link styles */
+a {
+  color: #4682b4;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: #6a5acd;
+  text-decoration: underline;
+}
+
+/* Modal styles (for future use) */
+.modal-content {
+  border-radius: 16px;
+  box-shadow: 0 6px 24px rgba(70, 130, 180, 0.15);
+}
+
+/* Misc */
+.lead {
+  color: #2b2834;
+  font-size: 1.2rem;
+}
+
+/* Favicon and logo tweaks */
+.favicon {
+  border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+  .navbar-brand {
+    font-size: 1.2rem;
+  }
+  .octofit-logo {
+    height: 28px;
+    margin-right: 8px;
+  }
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
